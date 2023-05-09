@@ -1,0 +1,91 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GLOBAL */
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* HEADER INDEX */
+header {
+    padding: 10px;
+    background-color: aqua;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: none;
+}
+
+nav ul li:hover{
+    text-shadow: 4px 3px 2px rebeccapurple;
+}
+
+/* Main index */
+
+main {
+    background-color: green;
+}
+.content {
+    padding: 60px 20px;
+}
+.content-all {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+.content-all_text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+/* Footer */
+footer{
+    background-color: black;
+    height: 235px;
+}
+
+
+@media (min-width: 400px) {
+    .nav-bar {
+        display: flex;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .nav-bar_item {
+        padding-left: 15px;
+        list-style-type: none;
+        font-size: 19px;
+    }
+    .content-all {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .pie{
+        color: antiquewhite;
+        font-size: 20px;
+        padding: 10px;
+
+    }
+    
+    
+}
