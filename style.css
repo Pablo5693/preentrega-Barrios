@@ -45,6 +45,7 @@ nav ul li:hover{
 }
 .nav-produc{
     display: none;
+    margin: 0px 5px;
 
 }
 
@@ -53,6 +54,7 @@ nav ul li:hover{
 
 main {
     background-color: green;
+    color: aliceblue;
 }
 .content {
     padding: 60px 20px;
@@ -71,14 +73,6 @@ main {
 /* MAIN PRODUCTOS */
 .main-produc{
     background-color: black;
-}
-.disenios{
-    padding: 50px;
-}
-.diseños-text{
-    color: blueviolet ;
-    text-align: center;
-    
 }
 /* tarjeta */
 .remera{
