@@ -5,51 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos</title>
     <link rel="shortcut icon" href="../assets/images/original_logo.gif" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" />
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <Header>
-        <nav>
-            <h1>La mejor marca de ropa deportiva</h1>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Productos.html">Productos</a></li>
-            </ul>
-        </nav>
-        
-    </Header>
-    <Main>
-        <section>
-            <article>
-                <div>
-                    <h2>Remeras sin mangas</h2>
-                    <img src="../assets/images/Remera sin mangas.png" alt="remera sin mangas">
-                </div>
+    <header class="header-produc">
+        <div class="nav">
+            <nav class="nav-produc">
+                <!-- Desktops -->
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>    
+            <!-- mobile -->
+            <span class="nav-mobile">#</span>
+        </div>
+    </header>
 
-                <h2>Remera overside</h2>
-                <img class="images" src="../assets/images/Remera overside.png" alt="remera overside">
-
-                <h2>Remera</h2>
-                <img class="images" src="../assets/images/Remera.png" alt="Remera">
-
-            </article>
+    <main class="main-produc">
+        <section class="remeras">
+            <h3>remeras sin mangas</h3>
+            <div class="remera-conteiner">
+                <!-- tarjeta 1 -->
+                <article class="card">
+                    <div class="card-conteiner">
+                        <img src="../assets/images/remera sin mangas.png" alt="remerasinmangas" width="360" height="350" />
+                    </div>
+                    <h2 class="card_title">remera sin mangas</h2>
+                    <p class="card_description">La remera sin mangas en un prenda de algodón con los costados bien abiertos. Ideal para la comodidad de la rutina diaria.</p>
+                </article>
+                <!-- tarjeta 2 -->
+                <article class="card">
+                    <div class="card-conteiner">
+                        <img src="../assets/images/capucha deportiva.png" alt="capuchadeportiva" width="360" height="350" />
+                    </div>
+                    <h2 class="card_title">Capucha deportiva</h2>
+                    <p class="card_description">La capuicha deportivaes una prenda de poliéster. Tiene mismo corte que la remera sin mangas, pero con capucha y tiras de ajuste.</p>
+                </article>
+                <!-- tarjeta 3 -->
+                <article class="card">
+                    <div class="card-conteiner">
+                        <img src="../assets/images/musculosa 1.png" alt="musculosa" width="360" height="350" />
+                    </div>
+                    <h2 class="card_title">Musculosa abierta</h2>
+                    <p class="card_description">La musculosa abierta es una prenda de poliéster de excelente calidad. Ideales para el ejercicio.</p>
+                </article>
+                <!-- Tarjeta 4 -->
+                <article class="card">
+                    <div class="card-conteiner">
+                        <img src="../assets/images/manga larga.png" alt="mangalarga" width="360" height="350" />
+                    </div>
+                    <h2 class="card_title">Remera manga larga</h2>
+                    <p class="card_description">Remera manga larga es una prenda de algodón.</p>
+                </article>
+                <!-- tarjeta 5 -->
+                <article class="card">
+                    <div class="card-conteiner">
+                        <img src="../assets/images/remera sport.png" alt="remera" width="360" height="350" />
+                    </div>
+                    <h2 class="card_title">Remera sport</h2>
+                    <p class="card_description">La remera sport es una prenda confeccionada en poliéster.</p>
+                </article>
+                <!-- tarjeta 6 -->
+                <article class="card">
+                    <div class="card-conteiner">
+                        <img src="../assets/images/remera overside.png" alt="overside" width="360" height="350" />
+                    </div>
+                    <h2 class="card_title">Remera overside</h2>
+                    <p class="card_description">La remera overside tiene la soltura y corte que esta a la moda. Creada de algodón peinado.</p>
+                </article>
+            </div>
         </section>
         
-    </Main>
+    </main>
     <footer>
-        <h3>Contactenme:</h3>
-        <div>
-
-            <form action="">
-                <input type="text" placeholder="Ingresar nombre" />
-                <input type="email" placeholder="Ingresar email"/>
-                <input type="checkbox" id="check"/>
-                <label for="check">Acepto terminos y condiciones</label>
-                <button>Enviar</button>
-                <button type="reset">Borar formulario</button>
-            </form>
-
-        </div>   
+     
     </footer>
     
 </body>

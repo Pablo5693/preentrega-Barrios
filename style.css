@@ -37,6 +37,15 @@ header {
 nav ul li:hover{
     text-shadow: 4px 3px 2px rebeccapurple;
 }
+/* HEADER PRODUCTOS */
+.header-produc{
+    background-color: black;
+    
+}
+.nav-produc{
+    display: none;
+}
+
 
 /* Main index */
 
@@ -57,7 +66,32 @@ main {
     font-size: 50px;
     margin-bottom: 20px;
 }
-/* Footer */
+/* MAIN PRODUCTOS */
+.main-produc{
+    background-color: black;
+}
+/* tarjeta */
+.remera{
+    margin-top: 60px;
+    padding: 0 20px
+}
+.remera-conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+.card-conteiner img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.card_title{
+    text-align: center;
+}
+/* Footer INDEX */
 footer{
     background-color: black;
     height: 235px;
@@ -84,7 +118,13 @@ footer{
         color: antiquewhite;
         font-size: 20px;
         padding: 10px;
-
+    }
+    .nav-produc{
+        display: flex;
+        
+    }
+    .remera-conteiner{
+        grid-template-columns: repeat(3, 1fr);
     }
     
     
