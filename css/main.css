@@ -1,1 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+div {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main {
+  background-color: green;
+  color: #e2e8f0;
+}
+
+.content {
+  padding: 60px 20px;
+}
+.content-all {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+.content-all_text h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 650px) {
+  .content-all {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+footer {
+  background-image: url(../assets/images/fondo.jpg);
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pie {
+  color: #e2e8f0;
+  font-size: 20px;
+  padding: 10px;
+}
+.pie-pag {
+  padding: 20px 0px;
+  text-align: center;
+}

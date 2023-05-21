@@ -1,11 +1,11 @@
-/* GENERAL */
+/* GENERAL
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 /* GLOBAL */
-a {
+/* a {
     text-decoration: none;
 }
 ul {
@@ -13,7 +13,7 @@ ul {
 }
 div {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+} */ 
 
 
 /* HEADER INDEX */
@@ -52,7 +52,7 @@ nav ul li:hover{
 
 /* Main index */
 
-main {
+/* main {
     background-color: green;
     color: aliceblue;
 }
@@ -69,7 +69,7 @@ main {
 .content-all_text h1{
     font-size: 50px;
     margin-bottom: 20px;
-}
+} */
 /* MAIN PRODUCTOS */
 .main-produc{
     background-color: black;
@@ -101,13 +101,17 @@ main {
     
 }
 /* Footer INDEX */
-footer{
-    background-color: black;
+/* footer{
+    background-image: url(../assets/images/fondo.jpg);
     height: 235px;
-}
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
 
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
     .nav-bar {
         display: flex;
     }
@@ -119,15 +123,15 @@ footer{
         list-style-type: none;
         font-size: 19px;
     }
-    .content-all {
+    /* .content-all {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-    }
-    .pie{
+    } */
+    /* .pie{
         color: antiquewhite;
         font-size: 20px;
         padding: 10px;
-    }
+    } */
     .nav-produc {
         display: flex;
     }
@@ -138,8 +142,12 @@ footer{
     
     
 }
-@media (min-width: 700px){
+@media (min-width: 650px ){
     .remera-conteiner {
         grid-template-columns: repeat(3, 1fr);
     }
+    /* .content-all {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    } */
 }
