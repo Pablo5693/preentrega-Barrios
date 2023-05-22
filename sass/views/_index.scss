@@ -1,3 +1,4 @@
+
 main {
     background-color: green;
     color: $fontlight;
@@ -42,5 +43,26 @@ footer{
     &-pag{
         padding: 20px 0px;
         text-align: center;
+    }
+}
+
+h4 {
+    color: $green;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px
+}
+.pie-pags {
+    li {
+        margin: 10px 0;
+
+        a {
+            color: $fontlight;
+            transition: $transition;
+
+            &:hover {
+                color: $green;
+            }
+        }
     }
 }

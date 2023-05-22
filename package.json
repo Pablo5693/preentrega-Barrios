@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "util-sass": "sass ./sass/main.scss ./css/main.css -w --no-source-map"
+    "bg-sass": "sass ./sass/main.scss ./css/main.css -w --no-source-map"
   },
   "author": "",
   "license": "ISC",
