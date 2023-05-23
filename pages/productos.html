@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../stlye/style.css">
     
 </head>
-<body>
+<body class="body__produc">
     <header class="header-produc">
         <div class="nav">
             <img class="img" src="../assets/images/logo 2.png" alt="Sour" width="150px" height="auto" />
@@ -26,9 +26,22 @@
                     <li>
                         <a href="./productos.html">Productos</a>
                     </li>
-                    <!-- <li>
-                        <a href="">Formas de pago</a>
-                    </li> -->
+                    <li>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">🛒</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">MIS PRODUCTOS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="store">
+                        <i class="bi bi-bag"></i>
+                      </div>
+                      <div class="offcanvas-body">
+                        <p>Tu carrito esta vacío</p>
+                      </div>
+                    </div>
+                    </li>
                 </ul>
                 <form class="nav-produc" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
@@ -134,13 +147,6 @@
         </section>
     </main>
     <footer>
-        <!-- <div>
-            <h3>Siguenos en nuestras redes sociales.</h3>
-            <div class="pie__rrss">
-                <a href="https://www.instagram.com/sourfitness/" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="" class="twitter"><i class="bi bi-twitter"></i></a>
-                </div>
-        </div> -->
     </footer>
     
 </body>

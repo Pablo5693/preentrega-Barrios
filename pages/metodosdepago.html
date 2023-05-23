@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class="head_met">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>metodosdepago</title>
@@ -12,8 +12,12 @@
     <!-- salida de sass -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../stlye/style.css" />
+
+    <!-- ICONO Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
 </head>
-<body>
+<body class="bod">
     <header>
         <div class="nav">
             <img class="img" src="../assets/images/logo 2.png" alt="Sour" width="150px" height="auto" />
@@ -25,15 +29,18 @@
                     <li class="nav-bar_item">
                         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">🛒</button>
 
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p>Try scrolling the rest of the page to see this option in action.</p>
-  </div>
-</div>
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">MIS PRODUCTOS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="store">
+                        <i class="bi bi-bag"></i>
+                      </div>
+                      <div class="offcanvas-body">
+                        <p>Tu carrito esta vacío</p>
+                      </div>
+                    </div>
                     </li>
                 </ul>
             <!-- mobile -->
@@ -43,18 +50,62 @@
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
                           <li><a class="dropdown-item" href="../pages/productos.html">Productos</a></li>
-                          <li><a class="dropdown-item" href="#">contacto</a></li>
+                          <li><a class="dropdown-item" href="../pages/metodosdepago.html">Metodos de pago
+                          </a></li>
                         </ul>
                     </li>
                 </span>
             </nav>    
         </div>
+        <div id="carouselExample" class="carousel carousel__metod">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h3>3 cuotas sin interés.</h3>
+                <a href="./metodosdepago.html">ver opciones de pago</a>
+              </div>
+              <div class="carousel-item">
+                <h3>Bienvenidos a nuestra tienda online.</h3>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
     </header>
-    <body>
-        
-    </body>
-    <footer></footer>
+    <main>
+        <div>
+            <div  class="text">
+                <h3>¿QUÉ MÉTODOS DE PAGO PUEDO UTILIZARPARA HACER PEDIDOS EN SOUR?</h3>
+                <p>Queremos que la compra por internet de tu prenda y equipo favoritos de Sour sea una experiencia rápida y sencilla.</p>
+                <h4><span>Preguntas frecuentes</span></h4>
+                <p><span>¿Puedo pagar mi pedido con múltiples tarjetas?</span></p>
+                <p>Si, el pago de los pedidos de Sour se puede dividir entre dos tarjetas, pueden ser de débito o de crédito.</p>
+                <p>Tené presente que la combinación de tarjetas debe ser 2 tarjetas de crédito o 2 tarjetas de débito. De lo contrario nuestro sistema rechazará la operación.</p>
+                <p><span>¿Puedo pagar un pedido en cuotas?</span></p>
+                <p>Si! Podes abonar en 3 cuotas sin interés en todo el sitio con tarjetas bancarias.</p>
+                <p>También podes abonar en 6 y 12 cuotas con un adicional de interés que dependerá del banco emisor de tu tarjeta. Podrás visualizar el valor final de tu pedido antes de realizar el pago.</p>
+                <p><span>¿Puedo pagar con una tarjeta internacional?</span></p>
+                <p>Sólo aceptamos tarjetas emitidas en Argentina.</p>
+                
+            </div>
+    </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <h3>Siguenos en nuestras redes sociales.</h3>
+            <div class="foot__rrss">
+                <a href="https://www.instagram.com/sourfitness/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="" class="twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

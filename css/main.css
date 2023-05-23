@@ -17,12 +17,12 @@ p {
   line-height: 1.5;
 }
 
-header {
+.head_index {
   padding: 10px;
   background-color: aqua;
 }
 
-main {
+.main_index {
   background-color: green;
   color: #e2e8f0;
 }
@@ -69,7 +69,7 @@ main {
     color: #22c55e;
   }
 }
-footer {
+.foot_index {
   background-image: url(../assets/images/fondo.jpg);
   height: auto;
   background-repeat: no-repeat;
@@ -101,11 +101,11 @@ h4 {
   color: #c92d8f;
 }
 
-body {
+.body__produc {
   background-color: black;
 }
 
-header {
+.header-produc {
   background-color: black;
   color: rgb(0, 4, 255);
 }
@@ -163,4 +163,46 @@ header {
   .nav-produc {
     display: flex;
   }
+}
+.bod {
+  background-image: url(../assets/images/fondo.3.jpg);
+}
+
+.carousel__metod {
+  color: #111;
+}
+
+span {
+  color: #111;
+  line-height: 1.15;
+}
+
+.offcanvas {
+  text-align: center;
+  align-items: center;
+}
+
+.text {
+  display: block;
+  text-align: left;
+  color: #111;
+  padding: 28px;
+  font-size: large;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+
+.store {
+  padding: 20px;
+}
+
+.foot {
+  display: block;
+  margin: 20px;
+}
+.foot__rrss {
+  padding: 10px;
+}
+.foot__rrss .instagram {
+  padding: 20px;
 }

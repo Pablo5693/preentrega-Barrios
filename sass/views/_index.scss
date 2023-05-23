@@ -1,8 +1,8 @@
-header {
+.head_index {
     padding: 10px;
     background-color: aqua;
 }
-main {
+.main_index {
     background-color: green;
     color: $fontlight;
 }
@@ -55,7 +55,7 @@ main {
 
 }
 
-footer{
+.foot_index{
     background-image: url(../assets/images/fondo.jpg);
     height: auto;
     background-repeat: no-repeat;

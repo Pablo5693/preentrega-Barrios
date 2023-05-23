@@ -1,0 +1,40 @@
+
+.bod{
+    background-image: url(../assets/images/fondo.3.jpg);
+}
+.carousel__metod {
+    color: #111;
+}
+span {
+    color: #111;
+    line-height: 1.15;
+}
+.offcanvas {
+
+    text-align: center;
+    align-items: center;
+
+}
+.text {
+    display: block;
+    text-align: left;
+    color: #111;
+    padding: 28px;
+    font-size: large;
+    max-width: 1200px;
+    border-radius: 10px;
+
+}
+.store {
+    padding: 20px;
+}
+.foot{
+    display: block;
+    margin: 20px;
+    &__rrss {
+        padding: 10px;
+        .instagram{
+            padding: 20px;
+        }
+    }
+}
