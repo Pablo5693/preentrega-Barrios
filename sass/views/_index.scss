@@ -1,4 +1,7 @@
-
+header {
+    padding: 10px;
+    background-color: aqua;
+}
 main {
     background-color: green;
     color: $fontlight;
@@ -24,6 +27,31 @@ main {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
+    .pie{
+        color: $fontlight;
+        font-size: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        &-pag{
+            padding: 20px 0px;
+        }
+        &-pags {
+            li {
+                margin: 10px 0;
+        
+                a {
+                    color: $fontlight;
+                    transition: $transition;
+        
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
 
 }
 
@@ -39,10 +67,10 @@ footer{
 .pie{
     color: $fontlight;
     font-size: 20px;
-    padding: 10px;
-    &-pag{
-        padding: 20px 0px;
-        text-align: center;
+    padding: 20px;
+    &__rrss{
+        @include templateFlex(row, space-evenly, false);
+            margin-top: 30px;
     }
 }
 
@@ -52,17 +80,7 @@ h4 {
     font-weight: bold;
     font-size: 20px
 }
-.pie-pags {
-    li {
-        margin: 10px 0;
 
-        a {
-            color: $fontlight;
-            transition: $transition;
-
-            &:hover {
-                color: $green;
-            }
-        }
-    }
+.instagram:hover {
+    color: #c92d8f;
 }

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 a {
@@ -16,8 +17,9 @@ p {
   line-height: 1.5;
 }
 
-div {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+header {
+  padding: 10px;
+  background-color: aqua;
 }
 
 main {
@@ -45,6 +47,27 @@ main {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+  .pie {
+    color: #e2e8f0;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .pie-pag {
+    padding: 20px 0px;
+  }
+  .pie-pags li {
+    margin: 10px 0;
+  }
+  .pie-pags li a {
+    color: #e2e8f0;
+    transition: all 0.3s;
+  }
+  .pie-pags li a:hover {
+    color: #22c55e;
+  }
 }
 footer {
   background-image: url(../assets/images/fondo.jpg);
@@ -58,9 +81,86 @@ footer {
 .pie {
   color: #e2e8f0;
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
 }
-.pie-pag {
-  padding: 20px 0px;
+.pie__rrss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+h4 {
+  color: #22c55e;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.instagram:hover {
+  color: #c92d8f;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  color: rgb(0, 4, 255);
+}
+
+.nav-produc {
+  display: none;
+  margin: 0px 10px;
+}
+
+.main-produc {
+  background-color: black;
+}
+
+.remera {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+.remera_description {
+  color: #e2e8f0;
   text-align: center;
+}
+.remera-conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+.remera-conteiner .card-conteiner_button {
+  background-color: #22c55e;
+  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: all 0.3s;
+}
+.remera-conteiner .card-conteiner img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.remera-conteiner .card_title {
+  text-align: center;
+}
+
+.carousel {
+  text-align: center;
+  color: #e2e8f0;
+}
+
+@media (min-width: 400px) {
+  .nav-produc {
+    display: flex;
+  }
 }

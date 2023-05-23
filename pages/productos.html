@@ -26,10 +26,14 @@
                     <li>
                         <a href="./productos.html">Productos</a>
                     </li>
-                    <li>
-                        <a href="">contacto</a>
-                    </li>
+                    <!-- <li>
+                        <a href="">Formas de pago</a>
+                    </li> -->
                 </ul>
+                <form class="nav-produc" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar...</button>
+                  </form>
                 
             <!-- mobile -->
                 <span class="nav-mobile">
@@ -39,17 +43,37 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
                                 <li><a class="dropdown-item" href="productos.html">Productos</a></li>
-                                <li><a class="dropdown-item" href="../pages/contacto.html">contacto</a></li>
+                                <li><a class="dropdown-item" href="./metodosdepago.html">Metodos de pago</a></li>
                             </ul>
                         </li>
                     </ul>
                 </span>
             </nav>
         </div>
+        <div id="carouselExample" class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h3>Bienvenidos a nuestra tienda online.</h3>
+              </div>
+              <div class="carousel-item">
+                <h3>3 cuotas sin interés.</h3>
+                <a href="./metodosdepago.html">ver opciones de pago</a>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </header>
 
     <main class="main-produc">
-        <section class="remeras">
+        <section class="remera">
             <h3 class="remera_description">Nuestra variedad de productos</h3>
             <div class="remera-conteiner">
                 <!-- tarjeta 1 -->
@@ -59,6 +83,7 @@
                     </div>
                     <h2 class="card_title">remera sin mangas</h2>
                     <p class="card_description">La remera sin mangas en un prenda de algodón con los costados bien abiertos. Ideal para la comodidad de la rutina diaria.</p>
+                    <button class="card-conteiner_button"><a href="#">Saber más...</a></button>
                 </article>
                 <!-- tarjeta 2 -->
                 <article class="card">
@@ -67,6 +92,7 @@
                     </div>
                     <h2 class="card_title">Capucha deportiva</h2>
                     <p class="card_description">La capuicha deportivaes una prenda de poliéster. Tiene mismo corte que la remera sin mangas, pero con capucha y tiras de ajuste.</p>
+                    <button class="card-conteiner_button"><a href="#">Saber más...</a></button>
                 </article>
                 <!-- tarjeta 3 -->
                 <article class="card">
@@ -74,7 +100,8 @@
                         <img src="../assets/images/musculosa 1.png" alt="musculosa" width="360" height="350" />
                     </div>
                     <h2 class="card_title">Musculosa abierta</h2>
-                    <p class="card_description">La musculosa abierta es una prenda de poliéster de excelente calidad. Ideales para el ejercicio.</p>
+                    <p class="card_description">La musculosa abierta es una prenda de poliéster de excelente calidad. Ideales para el ejercicio. Con modelos a tu elección.</p>
+                    <button class="card-conteiner_button"><a href="#">Saber más...</a></button>
                 </article>
                 <!-- Tarjeta 4 -->
                 <article class="card">
@@ -82,7 +109,8 @@
                         <img src="../assets/images/manga larga.png" alt="mangalarga" width="360" height="350" />
                     </div>
                     <h2 class="card_title">Remera manga larga</h2>
-                    <p class="card_description">Remera manga larga es una prenda de algodón.</p>
+                    <p class="card_description">Remera manga larga es una prenda de algodón, con el mismo corte entallado que nuestra remera.</p>
+                    <button class="card-conteiner_button"><a href="#">Saber más...</a></button>
                 </article>
                 <!-- tarjeta 5 -->
                 <article class="card">
@@ -91,6 +119,7 @@
                     </div>
                     <h2 class="card_title">Remera sport</h2>
                     <p class="card_description">La remera sport es una prenda confeccionada en poliéster.</p>
+                    <button class="card-conteiner_button"><a href="#">Saber más...</a></button>
                 </article>
                 <!-- tarjeta 6 -->
                 <article class="card">
@@ -99,11 +128,20 @@
                     </div>
                     <h2 class="card_title">Remera overside</h2>
                     <p class="card_description">La remera overside tiene la soltura y corte que esta a la moda. Creada de algodón peinado.</p>
+                    <button class="card-conteiner_button"><a href="#">Saber más...</a></button>
                 </article>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <!-- <div>
+            <h3>Siguenos en nuestras redes sociales.</h3>
+            <div class="pie__rrss">
+                <a href="https://www.instagram.com/sourfitness/" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="" class="twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+        </div> -->
+    </footer>
     
 </body>
 </html>
