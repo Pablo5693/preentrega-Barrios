@@ -17,9 +17,21 @@ p {
   line-height: 1.5;
 }
 
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  display: none;
+}
+
 .head_index {
   padding: 10px;
-  background-color: aqua;
+  background-color: black;
 }
 
 .main_index {
@@ -42,33 +54,6 @@ p {
   margin-bottom: 20px;
 }
 
-@media (min-width: 650px) {
-  .content-all {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-  .pie {
-    color: #e2e8f0;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .pie-pag {
-    padding: 20px 0px;
-  }
-  .pie-pags li {
-    margin: 10px 0;
-  }
-  .pie-pags li a {
-    color: #e2e8f0;
-    transition: all 0.3s;
-  }
-  .pie-pags li a:hover {
-    color: #22c55e;
-  }
-}
 .foot_index {
   background-image: url(../assets/images/fondo.jpg);
   height: auto;
@@ -79,9 +64,12 @@ p {
 }
 
 .pie {
-  color: #e2e8f0;
-  font-size: 20px;
-  padding: 20px;
+  color: #ff9944;
+  font-size: 25px;
+  padding: 40px;
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .pie__rrss {
   display: flex;
@@ -89,18 +77,67 @@ p {
   justify-content: space-evenly;
   margin-top: 30px;
 }
+.pie-pags li a {
+  color: #ff9944;
+  font-size: 25px;
+  transition: all 0.3s;
+}
+.pie-pags li a:hover {
+  color: #33ee66;
+}
+.pie__whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 
 h4 {
-  color: #22c55e;
+  color: #46adf9;
   margin-bottom: 20px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .instagram:hover {
   color: #c92d8f;
 }
 
+.instagram {
+  font-size: 45px;
+}
+
+.twitter {
+  font-size: 45px;
+}
+
+@media (min-width: 400px) {
+  .nav-bar {
+    display: flex;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .nav-bar_item {
+    padding-left: 15px;
+    list-style-type: none;
+    font-size: 19px;
+  }
+  .pie {
+    display: grid;
+  }
+  header div nav ul li {
+    padding: 5px;
+  }
+}
+@media (min-width: 650px) {
+  .content-all {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .pie {
+    display: flex;
+  }
+}
 .body__produc {
   background-color: black;
 }
@@ -153,6 +190,9 @@ h4 {
 .remera-conteiner .card_title {
   text-align: center;
 }
+.remera-conteiner .card_description {
+  font-size: 17px;
+}
 
 .carousel {
   text-align: center;
@@ -163,13 +203,21 @@ h4 {
   .nav-produc {
     display: flex;
   }
+  .remera-conteiner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 650px) {
+  .remera-conteiner {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .bod {
   background-image: url(../assets/images/fondo.3.jpg);
 }
 
 .carousel__metod {
-  color: #111;
+  color: #e2e8f0;
 }
 
 span {
@@ -187,9 +235,13 @@ span {
   text-align: left;
   color: #111;
   padding: 28px;
-  font-size: large;
+  font-size: 20px;
   max-width: 1200px;
   border-radius: 10px;
+}
+.text__span {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .store {
@@ -198,11 +250,14 @@ span {
 
 .foot {
   display: block;
+  text-align: center;
   margin: 20px;
+  font-size: 40px;
 }
 .foot__rrss {
   padding: 10px;
 }
 .foot__rrss .instagram {
   padding: 20px;
+  padding-right: 60px;
 }

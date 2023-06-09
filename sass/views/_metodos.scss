@@ -3,7 +3,7 @@
     background-image: url(../assets/images/fondo.3.jpg);
 }
 .carousel__metod {
-    color: #111;
+    color: $fontlight;
 }
 span {
     color: #111;
@@ -20,9 +20,13 @@ span {
     text-align: left;
     color: #111;
     padding: 28px;
-    font-size: large;
+    font-size: 20px;
     max-width: 1200px;
     border-radius: 10px;
+    &__span {
+        font-size: 25px;
+        font-weight: bold
+    }
 
 }
 .store {
@@ -30,11 +34,14 @@ span {
 }
 .foot{
     display: block;
+    text-align: center;
     margin: 20px;
+    font-size: 40px;
     &__rrss {
         padding: 10px;
         .instagram{
             padding: 20px;
+            padding-right: 60px;
         }
     }
 }

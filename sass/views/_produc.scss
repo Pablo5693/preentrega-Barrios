@@ -49,6 +49,9 @@
             &_title{
                 text-align: center;
             }
+            &_description {
+                font-size: 17px;
+            }
     
         }
     
@@ -64,5 +67,14 @@
     .nav-produc {
         display: flex;
     }
-    
+    .remera-conteiner{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+@media (min-width: $bpMedium ){
+    .remera-conteiner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }

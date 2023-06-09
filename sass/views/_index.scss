@@ -1,6 +1,6 @@
 .head_index {
     padding: 10px;
-    background-color: aqua;
+    background-color: black;
 }
 .main_index {
     background-color: green;
@@ -22,39 +22,6 @@
     }
 }    
 
-@media (min-width: $bpMedium) {
-    .content-all{
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
-    .pie{
-        color: $fontlight;
-        font-size: 20px;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        &-pag{
-            padding: 20px 0px;
-        }
-        &-pags {
-            li {
-                margin: 10px 0;
-        
-                a {
-                    color: $fontlight;
-                    transition: $transition;
-        
-                    &:hover {
-                        color: $green;
-                    }
-                }
-            }
-        }
-    }
-
-}
-
 .foot_index{
     background-image: url(../assets/images/fondo.jpg);
     height: auto;
@@ -65,22 +32,78 @@
 } 
 
 .pie{
-    color: $fontlight;
-    font-size: 20px;
-    padding: 20px;
+    color: $apricot;
+    font-size: 25px;
+    padding: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
     &__rrss{
         @include templateFlex(row, space-evenly, false);
             margin-top: 30px;
     }
+    &-pags {
+        li a {
+            color: $apricot;
+            font-size: 25px;
+            transition: $transition;
+            &:hover {
+                color: $acid;
+            }
+        }
+            
+    }
+    &__whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 h4 {
-    color: $green;
+    color: #46adf9;
     margin-bottom: 20px;
     font-weight: bold;
-    font-size: 20px
+    font-size: 25px
 }
 
 .instagram:hover {
     color: #c92d8f;
+}
+.instagram {
+    font-size: $width;
+}
+.twitter {
+    font-size: $width;
+}
+
+
+@media (min-width: $bpSmall) {
+    .nav-bar {
+        display: flex;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .nav-bar_item {
+        padding-left: 15px;
+        list-style-type: none;
+        font-size: 19px;
+    }
+    .pie {
+        display: grid;
+    }
+    
+    header div nav ul li {
+        padding: 5px;
+    }
+}
+@media (min-width: $bpMedium) {
+    .content-all{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .pie {
+        display: flex;
+    }
 }
